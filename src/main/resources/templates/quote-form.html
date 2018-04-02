@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Quote</title>
+</head>
+<body>
+    <h1>New Quote</h1>
+    <div th:unless="${#strings.isEmpty(message)}">
+        <p th:text="${message}"></p>
+    </div>
+    <form th:action="@{/quote/createQuote}" th:method="post" th:object="${quote}">
+        <p><label for="author">Author: </label><input id="author" th:field="*{author}" type="text"></p>
+        <p><label for="text">Text: </label><input id="text"  th:field="*{text}" type="text"></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>
