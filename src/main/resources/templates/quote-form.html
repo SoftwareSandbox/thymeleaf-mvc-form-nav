@@ -6,12 +6,12 @@
 </head>
 <body>
     <h1>New Quote</h1>
-    <div th:unless="${#strings.isEmpty(message)}">
-        <p th:text="${message}"></p>
+    <div data-th-unless="${#strings.isEmpty(message)}">
+        <p data-th-text="${message}"></p>
     </div>
-    <form th:action="@{/quote/createQuote}" th:method="post" th:object="${quote}">
-        <p><label for="author">Author: </label><input id="author" th:field="*{author}" type="text"></p>
-        <p><label for="text">Text: </label><input id="text"  th:field="*{text}" type="text"></p>
+    <form data-th-action="@{/quote/create}" data-th-method="post" data-th-object="${quote}">
+        <p><label for="author">Author: </label><input id="author" data-th-field="*{author}" type="text" autofocus></p>
+        <p><label for="text">Text: </label><input id="text"  data-th-field="*{text}" type="text"></p>
         <p><input type="submit" value="Submit"></p>
     </form>
 </body>

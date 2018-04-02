@@ -31,4 +31,10 @@ public class Quote {
     public LocalDateTime getCreationTime() {
         return creationTime;
     }
+
+    public void validate() {
+        if ("Jaimie".equalsIgnoreCase(getAuthor())) {
+            throw new DomainValidationException("Jaimie is not an allowed author.");
+        }
+    }
 }

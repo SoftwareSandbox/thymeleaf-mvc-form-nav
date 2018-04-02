@@ -10,3 +10,6 @@ On success (i.e. domain validation succeeded), the user is redirected to the det
 
 Upon refresh of the success page (or navigating directly to the quote with saved id), the message disappears.
 
+## FYI
+
+_Jaimie_ is a black-listed author, you can try entering a quote by _Gianni_ to trigger a `DomainValidationException`.
