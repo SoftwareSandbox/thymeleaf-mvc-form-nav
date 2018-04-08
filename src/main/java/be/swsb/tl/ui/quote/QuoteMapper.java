@@ -1,6 +1,6 @@
 package be.swsb.tl.ui.quote;
 
-import be.swsb.tl.domain.Quote;
+import be.swsb.tl.domain.quote.Quote;
 
 import java.util.Optional;
 

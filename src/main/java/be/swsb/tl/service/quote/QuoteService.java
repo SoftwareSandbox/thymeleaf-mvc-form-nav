@@ -1,12 +1,9 @@
 package be.swsb.tl.service.quote;
 
-import be.swsb.tl.domain.Quote;
+import be.swsb.tl.domain.quote.Quote;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 import java.util.logging.Logger;
 
 @Service
@@ -27,4 +24,9 @@ public class QuoteService {
     public Optional<Quote> findQuote(String id) {
         return Optional.ofNullable(quotes.get(UUID.fromString(id)));
     }
+
+    public List<Quote> findAll() {
+        return new ArrayList<>(quotes.values());
+    }
+
 }

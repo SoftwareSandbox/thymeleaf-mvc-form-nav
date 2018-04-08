@@ -1,7 +1,7 @@
 package be.swsb.tl.ui.quote;
 
-import be.swsb.tl.domain.DomainValidationException;
-import be.swsb.tl.domain.Quote;
+import be.swsb.tl.domain.quote.DomainValidationException;
+import be.swsb.tl.domain.quote.Quote;
 import be.swsb.tl.service.quote.QuoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

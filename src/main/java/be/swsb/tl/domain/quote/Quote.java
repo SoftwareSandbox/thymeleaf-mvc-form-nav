@@ -1,4 +1,4 @@
-package be.swsb.tl.domain;
+package be.swsb.tl.domain.quote;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
